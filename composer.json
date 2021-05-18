@@ -1,0 +1,40 @@
+{
+    "name": "mvd81/laravel-is-admin",
+    "description": "Laravel package, simple functionality to set a user as admin without an advanced role system",
+    "keywords": [
+        "Laravel",
+        "Laravel admin role",
+        "Laravel admin",
+        "Laravel is admin"
+    ],
+    "authors": [
+        {
+            "name": "Marcel van Doornen",
+            "email": "marcel@webbouwplus.nl"
+        }
+    ],
+    "require": {
+        "laravel/framework": "~8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mvd81\\LaravelIsAdmin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mvd81\\LaravelIsAdmin\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mvd81\\LaravelIsAdmin\\LaravelIsAdminServiceProvider"
+            ]
+        }
+    }
+}
