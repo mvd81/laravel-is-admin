@@ -19,7 +19,7 @@ class IsAdmin extends Middleware
     public function handle(Request $request, Closure $next)
     {
         if (!Auth::user()) {
-            return route('login');
+            return redirect(route('login'));
         }
 
         if (!Auth::user()->isAdmin()) {
