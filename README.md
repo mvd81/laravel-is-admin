@@ -49,7 +49,7 @@ $user->undoAdmin();
 ```
 
 ## Super admin
-It is possible to use user with ID 1 as admin without setting the 'is_admin' column to 1.
+It is possible to use user with ID 1 as admin without setting the 'is_admin' column to 1.  
 First you need to publish the config file.
 
 * ```php artisan vendor:publish```

@@ -30,9 +30,9 @@ class LaravelIsAdminServiceProvider extends ServiceProvider {
 
         // Publish the config file to the Laravel config directory.
         if ($this->app->runningInConsole()) {
-        $this->publishes([
-            __DIR__.'/config/is_admin.php' => config_path('is_admin.php'),
-        ]);
+            $this->publishes([
+                __DIR__.'/config/is_admin.php' => config_path('is_admin.php'),
+            ]);
         }
     }
 
