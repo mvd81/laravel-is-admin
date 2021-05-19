@@ -50,8 +50,11 @@ $user->undoAdmin();
 
 ## Super admin
 It is possible to use user with ID 1 as admin without setting the 'is_admin' column to 1.
+First you need to publish the config file.
+* ```php artisan vendor:publish```
+* Choose the option: Provider: Mvd81\LaravelIsAdmin\LaravelIsAdminServiceProvider
 
-In ```config/is_admin.php``` set 'use_super_admin' to true.
+Now in ```config/is_admin.php``` set 'use_super_admin' to true.
 
 ```php
 'use_super_admin' => true,

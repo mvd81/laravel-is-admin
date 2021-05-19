@@ -28,10 +28,10 @@ class LaravelIsAdminServiceProvider extends ServiceProvider {
         $router = $this->app['router'];
         $router->aliasMiddleware('IsAdmin', 'Mvd81\LaravelIsAdmin\Http\Middleware\IsAdmin');
 
-        // Copy the config file to the Laravel config directory.
-        if (!File::exists(config_path('is_admin.php'))) {
-            File::copy(__DIR__ . '/config/is_admin.php', config_path('is_admin.php'));
-        }
+        // Publish the config file to the Laravel config directory.
+        $this->publishes([
+            __DIR__.'/config/is_admin.php' => config_path('is_admin.php'),
+        ]);
     }
 
     /**
