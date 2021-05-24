@@ -50,21 +50,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     }
 
     /**
-     * Define database migrations.
-     *
-     * @return void
-     */
-    protected function defineDatabaseMigrations()
-    {
-        //$this->loadLaravelMigrations(['--database' => 'testbench']);
-    }
-
-    protected function setUpApplicationRoutes(): void {
-
-        //Route::view('blade-directive', 'dummy');
-    }
-
-    /**
      * @param \Illuminate\Foundation\Application $app
      *
      * @return array
@@ -76,7 +61,9 @@ class TestCase extends \Orchestra\Testbench\TestCase
         ];
     }
 
-
+    /**
+     * Create a test users database table.
+     */
     protected function createDatabase($app) {
 
         $app['db']->connection()->getSchemaBuilder()->create('users', function (Blueprint $table) {
@@ -87,11 +74,5 @@ class TestCase extends \Orchestra\Testbench\TestCase
             $table->boolean('is_admin')->default(0);
             $table->timestamps();
         });
-
-        //User::create(['email' => 'test@user.com']);
-       // Admin::create(['email' => 'admin@user.com']);
-
     }
-
-
 }
