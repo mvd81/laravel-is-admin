@@ -13,6 +13,7 @@
             "email": "marcel@webbouwplus.nl"
         }
     ],
+    "license": "MIT",
     "require": {
         "laravel/framework": "~8"
     },
