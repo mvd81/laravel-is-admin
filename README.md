@@ -1,5 +1,6 @@
 # Laravel Is Admin
-[![Build Status](https://img.shields.io/travis/mvd81/laravel-is-admin/master.svg?style=flat-square)](https://travis-ci.org/mvd81/laravel-is-admin.svg?branch=master)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mvd81/laravel-is-admin.svg?style=flat-square)](https://packagist.org/packages/mvd81/laravel-is-admin)
+[![Build Status](https://travis-ci.com/mvd81/laravel-is-admin.svg?branch=master)](https://travis-ci.com/mvd81/laravel-is-admin)
 ## Introduction
 Laravel package to extend you Laravel application with a simple admin permission functionality, with:
 
