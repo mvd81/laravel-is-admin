@@ -4,7 +4,6 @@ namespace Mvd81\LaravelIsAdmin\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Closure;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class IsAdmin extends Middleware
@@ -16,7 +15,7 @@ class IsAdmin extends Middleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next, ...$guards)
     {
         if (!Auth::user()) {
             return redirect(route('login'));
