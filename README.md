@@ -7,7 +7,7 @@ Laravel package to extend you Laravel application with a simple admin permission
 - Migration file to set a user as admin
 - Middleware
 - Blade directive
-- Artisan command to see how is an admin
+- Artisan command to see who is an admin
 - Option to set user with ID 1 as super admin
 
 ## Requirements
