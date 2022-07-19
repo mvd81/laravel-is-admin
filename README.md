@@ -81,7 +81,7 @@ You can use this Blade directive
 @endisAdmin
 ```
 
-## How is an admin?
+## Who is an admin?
 You can enter an artisan command to see how is an admin.
 ```bash
 php artisan command:isAdmin
