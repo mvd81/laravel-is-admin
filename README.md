@@ -2,7 +2,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mvd81/laravel-is-admin.svg?style=flat-square)](https://packagist.org/packages/mvd81/laravel-is-admin)
 [![Build Status](https://travis-ci.com/mvd81/laravel-is-admin.svg?branch=master)](https://travis-ci.com/mvd81/laravel-is-admin)
 ## Introduction
-Laravel package to extend you Laravel application with a simple admin permission functionality, with:
+Laravel package to extend your Laravel application with a simple admin permission functionality, with:
 
 - Migration file to set a user as admin
 - Middleware
