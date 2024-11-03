@@ -26,13 +26,14 @@ Laravel 10 or higher
 ```php
 use Mvd81\LaravelIsAdmin\Traits\isAdmin;
 ```
-4. Use the trait in the user model
+4. Use the trait in the User model
 ```php
 class User extends Authenticatable
 {
     use isAdmin;
     ...
 ```
+5. Add `is_admin` to the `$fillable` array in the User model
 
 ## How to use
 
