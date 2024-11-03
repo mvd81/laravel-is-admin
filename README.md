@@ -12,7 +12,7 @@ Laravel package to extend your Laravel application with a simple admin permissio
 
 ## Requirements
 
-Laravel 8 or higher
+Laravel 10 or higher
 
 ## Installation
 
