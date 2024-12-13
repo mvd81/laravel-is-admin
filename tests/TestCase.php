@@ -2,7 +2,7 @@
 
 namespace Mvd81\LaravelIsAdmin\Test;
 
-//use Mvd81\LaravelIsAdmin\Test\Models\User;
+use Mvd81\LaravelIsAdmin\Test\Models\User;
 
 use Illuminate\Database\Schema\Blueprint;
 use Mvd81\LaravelIsAdmin\Http\Middleware\IsAdmin;

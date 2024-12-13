@@ -2,7 +2,7 @@
 
 namespace Mvd81\LaravelIsAdmin\Console\Commands;
 
-use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Schema;
 
@@ -41,15 +41,20 @@ class IsAdminList extends Command{
             die;
         }
 
-        $admins = User::where('is_admin', 1)->get();
+        $admins = DB::table('users')->where('is_admin', 1)->get();
 
         if (config()->has('is_admin.use_super_admin')) {
-            $userOne = User::findOrFail(1);
-            $this->line('Super admin: ' . $userOne->name . '(' . $userOne->id .') | ' . $userOne->email);
+
+            $userOne = DB::table('users')->first();
+
+            if (!is_null($userOne)) {
+                $this->line('Super admin: ' . $userOne->name . '(' . $userOne->id . ') | ' . $userOne->email);
+            }
 
         }
 
         if (!count($admins)) {
+
             $this->line('There are no admin for this project');
         }
         else {
