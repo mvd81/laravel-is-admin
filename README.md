@@ -91,7 +91,7 @@ You can use this Blade directive
 ## Who is an admin?
 You can enter an artisan command to see how is an admin.
 ```bash
-php artisan command:isAdmin
+php artisan user:who-is-admin
 ```
 
 ## Uninstall

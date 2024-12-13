@@ -7,12 +7,13 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Schema;
 
 class IsAdminList extends Command{
+
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'command:isAdmin';
+    protected $signature = 'user:who-is-admin';
 
     /**
      * The console command description.
