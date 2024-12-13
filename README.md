@@ -16,10 +16,6 @@ Laravel package to extend your Laravel application with a simple admin permissio
 - Artisan command to see who is an admin
 - Option to set user with ID 1 as super admin
 
-## Requirements
-
-Laravel 10 or higher
-
 ## Installation
 
 1. ```composer require mvd81/laravel-is-admin```
