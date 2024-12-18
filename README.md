@@ -85,7 +85,7 @@ You can use this Blade directive
 ```
 
 ## Who is an admin?
-You can enter an artisan command to see how is an admin.
+You can enter an artisan command to see who is an admin.
 ```bash
 php artisan user:who-is-admin
 ```
